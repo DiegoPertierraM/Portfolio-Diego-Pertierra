@@ -1,0 +1,100 @@
+:root {
+  --white: #f9fafb;
+  --black: #111827;
+  --green: #24996e;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  margin: 0;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+p {
+  margin-block: 5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+ul,
+menu {
+  list-style: none;
+}
+
+section {
+  padding-inline: 1.5rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+
+  .menu-highlight {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 1rem;
+    background-color: var(--green);
+    transition: 0.4s all;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+
+    menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      li {
+        font-weight: 600;
+      }
+
+      .contact {
+        margin: 0;
+        padding-block: 0.5rem;
+        padding-inline: 1rem;
+        border: none;
+        font-family: "Poppins";
+        font-weight: 600;
+        background-color: transparent;
+        border: 0.2rem solid var(--green);
+        border-radius: 0.5rem;
+        transition: 0.25s background-color;
+        cursor: pointer;
+      }
+
+      .contact:hover {
+        background-color: var(--green);
+      }
+
+      .contact-scroll:hover {
+        background-color: var(--white);
+      }
+    }
+  }
+}
+
+main {
+  section#hero > h2 {
+    font-size: 3rem;
+    font-weight: 400;
+
+    span {
+      color: var(--green);
+      font-weight: 800;
+    }
+  }
+}
