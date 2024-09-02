@@ -4,6 +4,17 @@
   --green: #24996e;
 }
 
+*::selection {
+  /* Change highlight background color to black */
+  background: #90ffb3;
+  /* Change highlight text color to red */
+  color: var(--black);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Poppins";
@@ -12,7 +23,7 @@ body {
   background-color: var(--white);
 }
 
-p {
+p:not(:first-of-type) {
   margin-block: 5rem;
 }
 
@@ -22,20 +33,53 @@ h3,
 h4,
 h5 {
   margin: 0;
+  margin-block: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
 }
 
 ul,
 menu {
   list-style: none;
+  padding: 0;
 }
 
 section {
+  margin-block: 1.5rem;
   padding-inline: 1.5rem;
+}
+
+section h2 {
+  color: var(--black);
+  margin-block: 1rem;
+  font-size: 3rem;
+}
+
+#projects {
+  position: relative;
+  margin-block-start: 4rem;
+  scroll-margin-top: 6rem;
+}
+
+.title-underline {
+  position: absolute;
+  z-index: -1;
+  bottom: 0.5rem;
+  left: 3rem;
+  background-color: var(--green);
+  height: 1.5rem;
+  width: 250px;
+  filter: opacity(0.8);
 }
 
 header {
   position: sticky;
   top: 0;
+  z-index: 9;
 
   .menu-highlight {
     position: absolute;
@@ -50,7 +94,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 0.5rem;
+    padding-block: 1rem;
     padding-inline: 1.5rem;
 
     menu {
@@ -58,26 +102,16 @@ header {
       align-items: center;
       gap: 1.5rem;
 
+      a {
+        transition: 0.25s color;
+      }
+
+      a:hover {
+        color: var(--green);
+      }
+
       li {
         font-weight: 600;
-      }
-
-      .contact {
-        margin: 0;
-        padding-block: 0.5rem;
-        padding-inline: 1rem;
-        border: none;
-        font-family: "Poppins";
-        font-weight: 600;
-        background-color: transparent;
-        border: 0.2rem solid var(--green);
-        border-radius: 0.5rem;
-        transition: 0.25s background-color;
-        cursor: pointer;
-      }
-
-      .contact:hover {
-        background-color: var(--green);
       }
 
       .contact-scroll:hover {
@@ -87,14 +121,55 @@ header {
   }
 }
 
-main {
-  section#hero > h2 {
-    font-size: 3rem;
-    font-weight: 400;
+.contact {
+  margin: 0;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border: none;
+  font-family: "Poppins";
+  font-weight: 600;
+  background-color: transparent;
+  border: 0.2rem solid var(--green);
+  border-radius: 0.5rem;
+  transition: 0.25s background-color;
+  cursor: pointer;
+}
 
-    span {
-      color: var(--green);
-      font-weight: 800;
+.contact:hover {
+  background-color: var(--green);
+}
+
+main {
+  section#hero {
+    padding-block: 2rem;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 400;
+
+      span {
+        color: var(--green);
+        font-weight: 800;
+      }
+    }
+
+    p {
+      max-width: 50ch;
+    }
+
+    .socials {
+      margin-block: 2rem;
+      padding-inline: 0;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
     }
   }
+}
+
+.separation-line {
+  padding-inline: 1.5rem;
 }

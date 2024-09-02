@@ -4,15 +4,14 @@ const onScroll = () => {
   const scrollPosition = window.scrollY;
 
   const changeOnScrollDown = () => {
-    const menuButton = document.querySelector(".contact");
-    document.querySelector(".menu-highlight").style.height = "5rem";
+    const menuButton = document.querySelector("menu .contact");
+    document.querySelector(".menu-highlight").style.height = "6rem";
     document.querySelector("menu").style.color = "var(--white)";
-    document.querySelector(".contact").style.border =
-      "0.2rem solid var(--white)";
+    menuButton.style.border = "0.2rem solid var(--white)";
   };
 
   const changeOnScrollUp = () => {
-    const menuButton = document.querySelector(".contact");
+    const menuButton = document.querySelector("menu .contact");
     document.querySelector(".menu-highlight").style.height = "1rem";
     document.querySelector("menu").style.color = "var(--black)";
     menuButton.style.border = "0.2rem solid var(--green)";
@@ -35,3 +34,8 @@ const onScroll = () => {
 };
 
 window.addEventListener("scroll", onScroll);
+
+document.querySelector(".showCv").addEventListener("click", () => {
+  window.location.href =
+    "https://drive.google.com/drive/u/2/folders/16XkgexZRrCOHoBAuCWLtXSEzrfGN5KK_";
+});
