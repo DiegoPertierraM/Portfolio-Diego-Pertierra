@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-2024",
+  "version": "1.0.0",
+  "description": "Portfolio web de Diego Pertierra.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Pertierra",
+  "license": "ISC"
+}
+
