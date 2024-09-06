@@ -1,21 +1,21 @@
 :root {
-  --white: #f9fafb;
-  --black: #111827;
-  --green: #24996e;
-  --background-color: #f9fafb;
+  --white: #f2f7f2;
+  --blue: #5f7fff;
+  --citron: #bbbe64;
+  --background-color: #f2f7f2;
   --text-color: #111827;
-  --primary-color: #24996e;
+  --primary-color: #163865;
 }
 
 .dark-mode {
   --background-color: #051427;
   --text-color: #ffffff;
-  --primary-color: #5f7fff;
+  --primary-color: var(--blue);
 }
 
 *::selection {
-  background: #90ffb3;
-  color: var(--black);
+  background: var(--blue);
+  color: var(--citron);
 }
 
 html {
@@ -51,10 +51,15 @@ button {
   color: var(--text-color);
 }
 
+a:hover {
+  color: var(--citron);
+}
+
 ul,
 menu {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 section {
@@ -94,7 +99,7 @@ header {
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 1rem;
+    height: 0rem;
     background-color: var(--primary-color);
     transition: 0.4s all;
   }
@@ -103,7 +108,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 1rem;
+    height: 3.5rem;
+    padding-block: 0 1rem;
     padding-inline: 1.5rem;
 
     menu {
@@ -115,36 +121,46 @@ header {
         transition: 0.25s color;
       }
 
-      a:hover {
-        color: var(--primary-color);
-      }
-
       li {
         font-weight: 600;
       }
 
+      .contact-scroll {
+        color: var(--background-color);
+      }
+
       .contact-scroll:hover {
-        background-color: var(--white);
+        color: var(--primary-color);
+        background-color: var(--background-color);
       }
     }
   }
 }
 
+.link-color {
+  color: var(--background-color);
+}
+
+.link-color:hover {
+  color: var(--citron);
+}
+
 .contact {
   margin: 0;
-  padding-block: 0.5rem;
-  padding-inline: 1rem;
+  padding-block: 0.2rem;
+  padding-inline: 0.8rem;
   border: none;
   font-family: 'Poppins';
   font-weight: 600;
   background-color: transparent;
   border: 0.2rem solid var(--primary-color);
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   transition: 0.25s background-color;
   cursor: pointer;
 }
 
 .contact:hover {
+  color: var(--background-color);
   background-color: var(--primary-color);
 }
 
@@ -188,7 +204,7 @@ main {
         }
 
         li > a:hover > span {
-          color: var(--white);
+          color: var(--background-color);
         }
 
         li > a {
@@ -214,10 +230,6 @@ main {
   }
 }
 
-.separation-line {
-  padding-inline: 1.5rem;
-}
-
 /* Dark mode toggle */
 
 button#theme-toggle {
@@ -237,7 +249,8 @@ button#theme-toggle {
   width: 50px;
   height: 30px;
   background-color: var(--primary-color);
-  border-radius: 15px;
+  border: solid 0.2rem var(--background-color);
+  border-radius: 2rem;
   position: relative;
   cursor: pointer;
   display: flex;
@@ -250,7 +263,7 @@ button#theme-toggle {
 .sun-icon,
 .moon-icon {
   font-size: 20px;
-  color: rgb(255, 255, 209);
+  color: var(--white);
   transition: opacity 0.4s ease;
 }
 
@@ -261,7 +274,7 @@ button#theme-toggle {
   left: 5px;
   width: 1.3em;
   height: 1.3rem;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 50%;
   transition: transform 0.4s ease;
 }
@@ -280,12 +293,4 @@ input[type='checkbox']:checked ~ .slider .moon-icon {
 
 .moon-icon {
   opacity: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #121212;
-    --text-color: #ffffff;
-    --primary-color: #bb86fc;
-  }
 }
