@@ -4,7 +4,7 @@ export const onScroll = () => {
   const scrollPosition = window.scrollY;
   const menu = document.querySelector('menu');
   const menuHighlight = document.querySelector('.menu-highlight');
-  const menuBtn = document.querySelector('menu .contact');
+  const menuBtn = document.querySelector('menu .contact-btn');
   const links = document.querySelectorAll('menu a');
   const slider = document.querySelector('.slider');
 
@@ -30,8 +30,7 @@ export const onScroll = () => {
   };
 
   const changeOnHover = () => {
-    const contact = document.querySelector('.contact');
-    contact.classList.toggle('contact-scroll');
+    menuBtn.classList.toggle('contact-scroll');
   };
 
   if (scrollPosition > 0 && !hasScrolled) {

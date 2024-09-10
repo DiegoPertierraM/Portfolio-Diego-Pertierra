@@ -1,5 +1,6 @@
 import { darkMode } from './helpers/dark-mode.js';
 import { onScroll } from './helpers/scroll-menu.js';
+import { initializePopUp } from './helpers/popup.js';
 
 window.addEventListener('scroll', onScroll);
 
@@ -11,3 +12,4 @@ document.querySelector('.showCv').addEventListener('click', () => {
 });
 
 darkMode();
+initializePopUp();

@@ -31,7 +31,7 @@
           <menu>
             <li><a href="#projects">Proyectos</a></li>
             <li><a href="#about">Sobre mí</a></li>
-            <li><button class="contact">Contacto</button></li>
+            <li><button class="contact-btn">Contacto</button></li>
             <li>
               <label class="theme-switch">
                 <input type="checkbox" id="theme-toggle" />
@@ -47,68 +47,210 @@
     </header>
     <main>
       <section id="hero">
-        <h2>Hola, soy Diego,<br /><span>Desarrollador Web.</span></h2>
-        <p>
-          Desarrollador y Diseñador Multimedia, construyo aplicaciones web con
-          especial atención al diseño, la accesibilidad y la experiencia de
-          usuario.
-        </p>
-        <section class="socials">
-          <ul>
-            <li>
-              <a href="https://github.com/DiegoPertierraM" target="_blank">
-                <i class="fa-brands fa-github"></i>
-                <span>GitHub</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/diego-pertierra-menendez/"
-                target="_blank"
-              >
-                <i class="fa-brands fa-linkedin"></i>
-                <span>LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                <i class="fa-brands fa-codepen"></i>
-                <span>Codepen</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <button class="contact showCv">Ver CV</button>
+        <div>
+          <h2>Hola, soy Diego,<br /><span>Desarrollador Web.</span></h2>
+          <p>
+            Desarrollador y Diseñador Multimedia, construyo aplicaciones web con
+            especial atención al diseño, la accesibilidad y la experiencia de
+            usuario.
+          </p>
+          <section class="socials">
+            <ul>
+              <li>
+                <a href="https://github.com/DiegoPertierraM" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/diego-pertierra-menendez/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-codepen"></i>
+                  <span>Codepen</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <button class="contact-btn showCv">Ver CV</button>
+        </div>
+        <img src="img/code.png" alt="Avatar" />
       </section>
       <section id="projects">
         <h2>Mis proyectos</h2>
-        <div class="title-underline"></div>
+        <article class="project-card">
+          <a href="https://uniteam-diegop.netlify.app/" target="_blank">
+            <img
+              src="img/projects/uniteam/football.png"
+              alt="Proyecto Uniteam"
+            />
+            <div>
+              <h2>Uniteam</h2>
+              <ul class="tag-list">
+                <li>
+                  <img
+                    src="img/tags/angular.svg"
+                    alt="Angular"
+                    width="40"
+                  />Angular
+                </li>
+                <li>
+                  <img
+                    src="img/tags/ts.svg"
+                    alt="TypeScript"
+                    width="40"
+                  />TypeScript
+                </li>
+                <li>
+                  <img
+                    src="img/tags/express.png"
+                    alt="Express"
+                    width="40"
+                  />Express
+                </li>
+                <li>
+                  <img src="img/tags/html.svg" alt="HTML" width="40" />HTML
+                </li>
+                <li><img src="img/tags/css.svg" alt="CSS" width="40" />CSS</li>
+              </ul>
+              <p>
+                Plataforma web para la organización y búsqueda de quedadas
+                deportivas amateur. Cuenta con un sistema de registro y login de
+                usuarios mediante JWT, buscador, opciones de modificar el perfil
+                y agregar amigos, etc.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="project-card">
+          <a href="https://country-search-diego.netlify.app" target="_blank">
+            <img src="img/projects/country-search.png" alt="Country Search" />
+            <div>
+              <h2>Country Search</h2>
+              <ul class="tag-list">
+                <li>
+                  <img src="img/tags/react.svg" alt="React" width="40" />React
+                </li>
+                <li>
+                  <img
+                    src="img/tags/ts.svg"
+                    alt="TypeScript"
+                    width="40"
+                  />TypeScript
+                </li>
+                <li>
+                  <img src="img/tags/html.svg" alt="HTML" width="40" />HTML
+                </li>
+                <li><img src="img/tags/css.svg" alt="CSS" width="40" />CSS</li>
+              </ul>
+              <p>
+                Búsqueda dinámica de información de países, con datos como el
+                tiempo, los idiomas hablados... Utiliza las APIs de REST
+                Countries y OpenWeather.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="project-card">
+          <a
+            href="https://teamr-jessie-rick-and-morty.netlify.app"
+            target="_blank"
+          >
+            <img src="img/projects/rick-morty.png" alt="Rick y Morty" />
+            <div>
+              <h2>Rick & Morty</h2>
+              <ul class="tag-list">
+                <li>
+                  <img
+                    src="img/tags/angular.svg"
+                    alt="Angular"
+                    width="40"
+                  />Angular
+                </li>
+                <li>
+                  <img
+                    src="img/tags/ts.svg"
+                    alt="TypeScript"
+                    width="40"
+                  />TypeScript
+                </li>
+                <li>
+                  <img src="img/tags/html.svg" alt="HTML" width="40" />HTML
+                </li>
+                <li><img src="img/tags/css.svg" alt="CSS" width="40" />CSS</li>
+              </ul>
+              <p>
+                Utiliza la famosa API de Rick y Morty para mostrar tarjetas de
+                los personajes, episodios y lugares de la serie. Cuenta con un
+                sistema de filtrado mediante características de los personajes y
+                paginación.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="project-card">
+          <a href="https://poke-app-diego.netlify.app/" target="_blank">
+            <img src="img/projects/pokeapp.png" alt="PokeApp" />
+            <div>
+              <h2>PokeApp</h2>
+              <ul class="tag-list">
+                <li>
+                  <img
+                    src="img/tags/angular.svg"
+                    alt="Angular"
+                    width="40"
+                  />Angular
+                </li>
+                <li>
+                  <img
+                    src="img/tags/ts.svg"
+                    alt="TypeScript"
+                    width="40"
+                  />TypeScript
+                </li>
+                <li>
+                  <img src="img/tags/html.svg" alt="HTML" width="40" />HTML
+                </li>
+                <li><img src="img/tags/css.svg" alt="CSS" width="40" />CSS</li>
+              </ul>
+              <p>
+                Hecha con la célebre pokeApi, esta web te permite ver la lista
+                de todos los Pokémon existentes hasta el momento, además de
+                consultar datos como sus características de combate,
+                habilidades...
+              </p>
+            </div>
+          </a>
+        </article>
       </section>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum
-        iure aperiam excepturi odit rerum eaque, dolore doloremque iusto quasi
-        labore nmenula doloribus pariatur menulam voluptatibus beatae, tempora,
-        itaque quibusdam libero! Blanditiis veritatis laboriosam quibusdam
-        reiciendis recusandae deserunt vel facilis voluptatibus dolorem. Illum,
-        quidem soluta.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum
-        iure aperiam excepturi odit rerum eaque, dolore doloremque iusto quasi
-        labore nmenula doloribus pariatur menulam voluptatibus beatae, tempora,
-        itaque quibusdam libero! Blanditiis veritatis laboriosam quibusdam
-        reiciendis recusandae deserunt vel facilis voluptatibus dolorem. Illum,
-        quidem soluta.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum
-        iure aperiam excepturi odit rerum eaque, dolore doloremque iusto quasi
-        labore nmenula doloribus pariatur menulam voluptatibus beatae, tempora,
-        itaque quibusdam libero! Blanditiis veritatis laboriosam quibusdam
-        reiciendis recusandae deserunt vel facilis voluptatibus dolorem. Illum,
-        quidem soluta.
-      </p>
     </main>
+    <div class="popup" id="contact-popup">
+      <div class="popup-content">
+        <span class="close-btn"
+          ><i class="fa-solid fa-circle-xmark fa-xl" style="color: #cd4e37"></i
+        ></span>
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" name="user_name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" name="user_email" required />
+
+          <label for="message">Message:</label>
+          <textarea name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
     <footer></footer>
   </body>
 </html>
