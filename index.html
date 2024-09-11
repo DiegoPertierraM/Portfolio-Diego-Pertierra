@@ -22,11 +22,6 @@
     <header>
       <div class="menu-highlight"></div>
       <div class="menu">
-        <h1>
-          <a href="index.html"
-            ><img src="logo.svg" alt="Logo personal" width="40px"
-          /></a>
-        </h1>
         <nav>
           <menu>
             <li><a href="#projects">Proyectos</a></li>
@@ -48,7 +43,11 @@
     <main>
       <section id="hero">
         <div>
-          <h2>Hola, soy Diego,<br /><span>Desarrollador Web.</span></h2>
+          <div class="hero-title">
+            <span>Hola, soy </span>
+            <h1>Diego Pertierra</h1>
+            <h2>Desarrollador Web.</h2>
+          </div>
           <p>
             Desarrollador y Diseñador Multimedia, construyo aplicaciones web con
             especial atención al diseño, la accesibilidad y la experiencia de
@@ -251,14 +250,14 @@
         ></span>
         <h2>Contact Me</h2>
         <form id="contact-form">
-          <label for="name">Name:</label>
-          <input type="text" name="user_name" required />
+          <label for="user_name">Name:</label>
+          <input type="text" name="user_name" id="user_name" required />
 
-          <label for="email">Email:</label>
-          <input type="email" name="user_email" required />
+          <label for="user_email">Email:</label>
+          <input type="email" name="user_email" id="user_email" required />
 
           <label for="message">Message:</label>
-          <textarea name="message" required></textarea>
+          <textarea name="message" id="message" required></textarea>
 
           <button type="submit">Send</button>
         </form>

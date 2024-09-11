@@ -1,6 +1,7 @@
 import { darkMode } from './helpers/dark-mode.js';
 import { onScroll } from './helpers/scroll-menu.js';
 import { initializePopUp } from './helpers/popup.js';
+import { toggleClassBasedOnScreenSize } from './helpers/toggle-mobile-menu.js';
 
 window.addEventListener('scroll', onScroll);
 
@@ -13,3 +14,6 @@ document.querySelector('.show-cv').addEventListener('click', () => {
 
 darkMode();
 initializePopUp();
+toggleClassBasedOnScreenSize();
+
+window.addEventListener('resize', toggleClassBasedOnScreenSize);
