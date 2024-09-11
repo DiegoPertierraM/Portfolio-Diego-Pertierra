@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio web de Diego Pertierra, desarrollador full stack. Mira todos mis proyectos y mis redes aquí."
+    />
     <title>Diego Pertierra</title>
     <link rel="shortcut icon" href="logo.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
+      rel="preload"
     />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/ff1ae33997.js"
       crossorigin="anonymous"
+      defer
     ></script>
     <script src="main.js" type="module" defer></script>
   </head>
@@ -80,14 +85,14 @@
           </section>
           <button class="contact-btn show-cv">Ver CV</button>
         </div>
-        <img src="img/code.png" alt="Avatar" />
+        <img src="img/code.webp" alt="Avatar" />
       </section>
       <section id="projects">
         <h2>Mis proyectos</h2>
         <article class="project-card">
           <a href="https://uniteam-diegop.netlify.app/" target="_blank">
             <img
-              src="img/projects/uniteam.png"
+              src="img/projects/uniteam.webp"
               alt="Proyecto Uniteam"
               class="p-thumbnail"
             />
@@ -97,28 +102,30 @@
                 <li>
                   <img
                     src="img/tags/angular.svg"
-                    alt="Angular"
+                    alt="Angular icon"
                     width="40"
                   />Angular
                 </li>
                 <li>
                   <img
                     src="img/tags/ts.svg"
-                    alt="TypeScript"
+                    alt="TypeScript icon"
                     width="40"
                   />TypeScript
                 </li>
                 <li>
                   <img
                     src="img/tags/express.png"
-                    alt="Express"
+                    alt="Express icon"
                     width="40"
                   />Express
                 </li>
                 <li>
-                  <img src="img/tags/html.svg" alt="HTML" width="40" />HTML
+                  <img src="img/tags/html.svg" alt="HTML icon" width="40" />HTML
                 </li>
-                <li><img src="img/tags/css.svg" alt="CSS" width="40" />CSS</li>
+                <li>
+                  <img src="img/tags/css.svg" alt="CSS icon" width="40" />CSS
+                </li>
               </ul>
               <p>
                 Plataforma web para la organización y búsqueda de quedadas
@@ -132,7 +139,8 @@
         <article class="project-card">
           <a href="https://country-search-diego.netlify.app" target="_blank">
             <img
-              src="img/projects/country-search.png"
+              loading="lazy"
+              src="img/projects/country-search.webp"
               alt="Country Search"
               class="p-thumbnail"
             />
@@ -140,19 +148,37 @@
               <h2>Country Search</h2>
               <ul class="tag-list">
                 <li>
-                  <img src="img/tags/react.svg" alt="React" width="40" />React
+                  <img
+                    loading="lazy"
+                    src="img/tags/react.svg"
+                    alt="React icon"
+                    width="40"
+                  />React
                 </li>
                 <li>
                   <img
+                    loading="lazy"
                     src="img/tags/ts.svg"
-                    alt="TypeScript"
+                    alt="TypeScript icon"
                     width="40"
                   />TypeScript
                 </li>
                 <li>
-                  <img src="img/tags/html.svg" alt="HTML" width="40" />HTML
+                  <img
+                    loading="lazy"
+                    src="img/tags/html.svg"
+                    alt="HTML icon"
+                    width="40"
+                  />HTML
                 </li>
-                <li><img src="img/tags/css.svg" alt="CSS" width="40" />CSS</li>
+                <li>
+                  <img
+                    loading="lazy"
+                    src="img/tags/css.svg"
+                    alt="CSS icon"
+                    width="40"
+                  />CSS
+                </li>
               </ul>
               <p>
                 Búsqueda dinámica de información de países, con datos como el
@@ -168,7 +194,8 @@
             target="_blank"
           >
             <img
-              src="img/projects/rick-morty.png"
+              loading="lazy"
+              src="img/projects/rick-morty.webp"
               alt="Rick y Morty"
               class="p-thumbnail"
             />
@@ -177,22 +204,36 @@
               <ul class="tag-list">
                 <li>
                   <img
+                    loading="lazy"
                     src="img/tags/angular.svg"
-                    alt="Angular"
+                    alt="Angular icon"
                     width="40"
                   />Angular
                 </li>
                 <li>
                   <img
+                    loading="lazy"
                     src="img/tags/ts.svg"
-                    alt="TypeScript"
+                    alt="TypeScript icon"
                     width="40"
                   />TypeScript
                 </li>
                 <li>
-                  <img src="img/tags/html.svg" alt="HTML" width="40" />HTML
+                  <img
+                    loading="lazy"
+                    src="img/tags/html.svg"
+                    alt="HTML icon"
+                    width="40"
+                  />HTML
                 </li>
-                <li><img src="img/tags/css.svg" alt="CSS" width="40" />CSS</li>
+                <li>
+                  <img
+                    loading="lazy"
+                    src="img/tags/css.svg"
+                    alt="CSS icon"
+                    width="40"
+                  />CSS
+                </li>
               </ul>
               <p>
                 Utiliza la famosa API de Rick y Morty para mostrar tarjetas de
@@ -206,7 +247,8 @@
         <article class="project-card">
           <a href="https://poke-app-diego.netlify.app/" target="_blank">
             <img
-              src="img/projects/pokeapp.png"
+              loading="lazy"
+              src="img/projects/pokeapp.webp"
               alt="PokeApp"
               class="p-thumbnail"
             />
@@ -215,22 +257,36 @@
               <ul class="tag-list">
                 <li>
                   <img
+                    loading="lazy"
                     src="img/tags/angular.svg"
-                    alt="Angular"
+                    alt="Angular icon"
                     width="40"
                   />Angular
                 </li>
                 <li>
                   <img
+                    loading="lazy"
                     src="img/tags/ts.svg"
-                    alt="TypeScript"
+                    alt="TypeScript icon"
                     width="40"
                   />TypeScript
                 </li>
                 <li>
-                  <img src="img/tags/html.svg" alt="HTML" width="40" />HTML
+                  <img
+                    loading="lazy"
+                    src="img/tags/html.svg"
+                    alt="HTML icon"
+                    width="40"
+                  />HTML
                 </li>
-                <li><img src="img/tags/css.svg" alt="CSS" width="40" />CSS</li>
+                <li>
+                  <img
+                    loading="lazy"
+                    src="img/tags/css.svg"
+                    alt="CSS icon"
+                    width="40"
+                  />CSS
+                </li>
               </ul>
               <p>
                 Hecha con la célebre pokeApi, esta web te permite ver la lista
