@@ -49,7 +49,6 @@
       <section id="hero">
         <div>
           <div class="hero-title">
-            <span>Hola, soy </span>
             <h1>Diego Pertierra</h1>
             <h2>Desarrollador Web.</h2>
           </div>
@@ -85,7 +84,11 @@
           </section>
           <button class="contact-btn show-cv">Ver CV</button>
         </div>
-        <img src="img/code.webp" alt="Avatar" />
+        <img
+          src="img/code.webp"
+          alt="Imagen de unos corchetes"
+          class="hero-img"
+        />
       </section>
       <section id="projects">
         <h2>Mis proyectos</h2>
@@ -298,6 +301,30 @@
           </a>
         </article>
       </section>
+      <section id="about">
+        <h2>Sobre mí</h2>
+        <article>
+          <img
+            loading="lazy"
+            src="img/me.webp"
+            alt="Foto de mí"
+            class="portrait-img"
+          />
+          <div>
+            <h2>¡Hola! 👋 Soy Diego, Desarrollador Web Full Stack</h2>
+            <p>
+              Especializado en desarrollo con React, Angular, TypeScript,
+              Node.js y Express, además de otras tecnologías varias, me
+              interesan especialmente el código limpio, las buenas prácticas, y
+              la arquitectura y diseño de software. También tengo conocimientos
+              de UX y UI, y amplia experiencia en maquetación web con HTML y
+              CSS. Por encima de todo, destacaría mi capacidad de adaptarme al
+              cambio, de manejar la frustración, y la curiosidad por aprender
+              constantemente nuevas cosas.
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
     <div class="popup" id="contact-popup">
       <div class="popup-content">
@@ -319,6 +346,43 @@
         </form>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+      <div class="footer-content">
+        <h3>Diego Pertierra</h3>
+        <p>
+          Desarrollador Web Full Stack. Construyo aplicaciones web con énfasis
+          en el diseño, accesibilidad y experiencia de usuario.
+        </p>
+        <ul class="socials">
+          <li>
+            <a
+              href="https://github.com/DiegoPertierraM"
+              target="_blank"
+              aria-label="Link to my GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/diego-pertierra-menendez/"
+              target="_blank"
+              aria-label="Link to my LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" aria-label="Link to my Codepen">
+              <i class="fa-brands fa-codepen"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">
+          &copy; 2024 Diego Pertierra. Todos los derechos reservados.
+        </p>
+        <a href="#hero" class="back-to-top">Volver arriba</a>
+      </div>
+    </footer>
   </body>
 </html>

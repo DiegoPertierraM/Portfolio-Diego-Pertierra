@@ -3,7 +3,7 @@
   --black: #111827;
   --blue: #5f7fff;
   --dark-blue: #163865;
-  --citron: #bbbe64;
+  --yellow: #fdde46;
   --background-color: #f2f7f2;
   --text-color: #111827;
   --primary-color: #163865;
@@ -17,7 +17,7 @@
 
 *::selection {
   background: var(--blue);
-  color: var(--citron);
+  color: var(--yellow);
 }
 
 html {
@@ -62,7 +62,7 @@ button {
 }
 
 a:hover {
-  color: var(--citron);
+  color: var(--yellow);
 }
 
 ul,
@@ -168,7 +168,7 @@ header {
 }
 
 .link-color:hover {
-  color: var(--citron);
+  color: var(--yellow);
 }
 
 .contact-btn {
@@ -199,8 +199,7 @@ header {
 }
 
 .show-cv:hover {
-  color: var(--primary-color);
-  background-color: var(--citron);
+  background-color: var(--yellow);
 }
 
 main {
@@ -229,17 +228,14 @@ main {
       }
     }
 
-    img {
+    .hero-img {
+      margin: 0 auto;
       width: 40%;
       min-width: 200px;
       object-fit: contain;
       padding-block: 1rem;
       filter: drop-shadow(0.5rem 0.5rem 0.5rem var(--blue));
     }
-  }
-
-  p {
-    max-width: 50ch;
   }
 
   .socials {
@@ -474,7 +470,7 @@ form button:hover {
         font-size: 0.9rem;
         padding-block: 0.3rem;
         padding-inline: 0.8rem;
-        color: var(--background-color);
+        color: var(--white);
         border-radius: 4rem;
         background-color: var(--primary-color);
 
@@ -488,10 +484,119 @@ form button:hover {
 }
 
 .project-card:hover {
-  box-shadow: 0 0 5px 5px var(--citron);
+  box-shadow: 0 0 5px 5px var(--yellow);
+}
+
+/* Sobre Mí */
+#about {
+  margin-block-end: 4rem;
+
+  article {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+    .portrait-img {
+      margin-block: 2rem;
+      border-radius: 100%;
+      border: 0.5rem solid var(--primary-color);
+      object-fit: cover;
+      width: 200px;
+      height: 200px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 50ch;
+}
+
+.footer-content h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.footer-content p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.footer-content .socials {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content .socials li {
+  margin: 0 15px;
+}
+
+.footer-content .socials a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer-content .socials a:hover {
+  color: var(--yellow);
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.back-to-top {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--yellow);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.back-to-top:hover {
+  color: #051427;
 }
 
 @media (width < 1000px) {
+  #about {
+    article {
+      flex-direction: column;
+      gap: 0;
+
+      .portrait-img {
+        margin-block: 0;
+      }
+
+      div h2 {
+        line-height: 2rem;
+        max-width: 32ch;
+      }
+    }
+  }
 }
 
 @media (width < 650px) {
@@ -579,9 +684,23 @@ form button:hover {
       margin-block: 0 1rem;
     }
 
-    .project-card a div {
-      padding-inline: 1rem;
-      margin-inline: 0;
+    .project-card a {
+      div {
+        padding-inline: 1rem;
+        margin-inline: 0;
+      }
+
+      .p-thumbnail {
+        padding-inline-start: 1.3rem;
+      }
+    }
+  }
+
+  #about {
+    article {
+      p {
+        font-size: 0.9rem;
+      }
     }
   }
 }
