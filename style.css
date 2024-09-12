@@ -230,7 +230,7 @@ main {
 
     .hero-img {
       margin: 0 auto;
-      width: 50%;
+      width: 60%;
       min-width: 200px;
       object-fit: contain;
       padding-block: 1rem;
@@ -422,7 +422,7 @@ form button:hover {
 .project-card {
   border-radius: 0.5rem;
   box-shadow: 0 0 5px 5px var(--primary-color);
-  max-width: 900px;
+  max-width: 1000px;
   margin-block: 2rem 3rem;
   transition: 0.25s box-shadow;
 
