@@ -230,11 +230,11 @@ main {
 
     .hero-img {
       margin: 0 auto;
-      width: 40%;
+      width: 50%;
       min-width: 200px;
       object-fit: contain;
       padding-block: 1rem;
-      filter: drop-shadow(0.5rem 0.5rem 0.5rem var(--blue));
+      filter: drop-shadow(0.2rem 0.2rem 0.2rem var(--blue));
     }
   }
 
