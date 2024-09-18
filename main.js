@@ -3,6 +3,10 @@ import { onScroll } from './helpers/scroll-menu.js';
 import { initializePopUp } from './helpers/popup.js';
 import { toggleClassBasedOnScreenSize } from './helpers/toggle-mobile-menu.js';
 
+emailjs.init({
+  publicKey: 'p3CMJoC6bDcDINNq0',
+});
+
 window.addEventListener('scroll', onScroll);
 
 document.querySelector('.show-cv').addEventListener('click', () => {

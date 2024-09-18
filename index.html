@@ -12,14 +12,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;&display=swap"
       rel="preload"
+      as="style"
     />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/ff1ae33997.js"
       crossorigin="anonymous"
       defer
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
     <script src="main.js" type="module" defer></script>
   </head>
@@ -316,11 +321,14 @@
               Especializado en desarrollo con React, Angular, TypeScript,
               Node.js y Express, además de otras tecnologías varias, me
               interesan especialmente el código limpio, las buenas prácticas, y
-              la arquitectura y diseño de software. También tengo conocimientos
-              de UX y UI, y amplia experiencia en maquetación web con HTML y
-              CSS. Por encima de todo, destacaría mi capacidad de adaptarme al
-              cambio, de manejar la frustración, y la curiosidad por aprender
-              constantemente nuevas cosas.
+              la arquitectura y diseño de software.
+            </p>
+            <br />
+            <p>
+              También tengo conocimientos de UX y UI, y amplia experiencia en
+              maquetación web con HTML y CSS. Por encima de todo, destacaría mi
+              capacidad de adaptarme al cambio, de manejar la frustración, y la
+              curiosidad por aprender constantemente nuevas cosas.
             </p>
           </div>
         </article>
@@ -331,18 +339,18 @@
         <span class="close-btn"
           ><i class="fa-solid fa-circle-xmark fa-xl" style="color: #cd4e37"></i
         ></span>
-        <h2>Contact Me</h2>
+        <h2>Escríbeme</h2>
         <form id="contact-form">
-          <label for="user_name">Name:</label>
+          <label for="user_name">Nombre:</label>
           <input type="text" name="user_name" id="user_name" required />
 
           <label for="user_email">Email:</label>
           <input type="email" name="user_email" id="user_email" required />
 
-          <label for="message">Message:</label>
+          <label for="message">Mensaje:</label>
           <textarea name="message" id="message" required></textarea>
 
-          <button type="submit">Send</button>
+          <button type="submit">Enviar</button>
         </form>
       </div>
     </div>
