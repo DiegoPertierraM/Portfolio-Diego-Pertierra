@@ -424,6 +424,7 @@ form button:hover {
   box-shadow: 0 0 5px 5px var(--primary-color);
   max-width: 1000px;
   margin-block: 2rem 3rem;
+  overflow: hidden;
   transition: 0.25s box-shadow;
 
   h2,
@@ -440,8 +441,9 @@ form button:hover {
     .p-thumbnail {
       padding-block: 1rem;
       padding-inline: 1rem;
-      height: 200px;
+      height: 210px;
       filter: drop-shadow(0 0 0.1rem var(--black));
+      transition: 0.4s transform;
     }
 
     img {
@@ -485,6 +487,10 @@ form button:hover {
 
 .project-card:hover {
   box-shadow: 0 0 5px 5px var(--yellow);
+}
+
+.project-card:hover .p-thumbnail {
+  transform: scale(1.18);
 }
 
 /* Sobre Mí */
